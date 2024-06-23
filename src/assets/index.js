@@ -20,7 +20,8 @@ import chromecast from "./chrome-cast.svg";
 import sliders04 from "./sliders-04.svg";
 import loading from "./loading.png";
 import background from "./background.jpg";
-import white from "./white.svg";
+import white from "./white.png";
+import purple from "./purple.png";
 import whiteman from "./whiteman.png";
 
 import curve from "./hero/curve.png";
@@ -80,6 +81,7 @@ import twitter from "./socials/twitter.svg";
 export {
   brainwave,
   white,
+  purple,
   whiteman,
   check,
   check2,
