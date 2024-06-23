@@ -1,4 +1,5 @@
 import { useLocation } from "react-router-dom";
+import { disablePageScroll, enablepageScroll } from "scroll-lock";
 import { white } from "../assets";
 
 import { navigation } from "../constants";
@@ -14,12 +15,17 @@ const Header = () => {
   const toggleNavigation = () => {
     if (openNavigation) {
       setOpenNavigation(false);
+      enablepageScroll();
     } else {
       setOpenNavigation(true);
+      disablePageScroll();
     }
   };
 
   const handleClick = () => {
+    if (!openNavigation) return;
+
+    enablepageScroll();
     setOpenNavigation(false);
   };
 
